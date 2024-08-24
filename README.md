@@ -74,5 +74,5 @@
    <img width="800" alt="task15-3" src="https://github.com/user-attachments/assets/0c06e862-d1f2-4302-b218-f5c491052d25">
 
 6. Напишите скрипт на bash: автоматизируйте поднятие необходимых контейнеров, запуск ansible-playbook и остановку контейнеров.
-   Скрипт приложен в репозитории
+   [Скрипт приложен в репозитории](https://github.com/sash3939/Ansible1/blob/main/playbook/run_ansible.sh)
 7. Все изменения должны быть зафиксированы и отправлены в ваш личный репозиторий.
