@@ -5,12 +5,23 @@
 1. Запустили playbook на окружении из `test.yml`, зафиксировали значение, которое имеет факт `some_fact` для указанного хоста при выполнении playbook.
   <img width="934" alt="task1" src="https://github.com/user-attachments/assets/0b2352c0-8057-4a53-951e-1cb46e1353c7">
 
-3. Найдите файл с переменными (group_vars), в котором задаётся найденное в первом пункте значение, и поменяйте его на `all default fact`.
-4. Воспользуйтесь подготовленным (используется `docker`) или создайте собственное окружение для проведения дальнейших испытаний.
-5. Проведите запуск playbook на окружении из `prod.yml`. Зафиксируйте полученные значения `some_fact` для каждого из `managed host`.
-6. Добавьте факты в `group_vars` каждой из групп хостов так, чтобы для `some_fact` получились значения: для `deb` — `deb default fact`, для `el` — `el default fact`.
-7.  Повторите запуск playbook на окружении `prod.yml`. Убедитесь, что выдаются корректные значения для всех хостов.
-8. При помощи `ansible-vault` зашифруйте факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
+2. Найдите файл с переменными (group_vars), в котором задаётся найденное в первом пункте значение, и поменяйте его на `all default fact`.
+  <img width="929" alt="task2" src="https://github.com/user-attachments/assets/6d5fa5f8-11d5-4f31-b088-336d15f121e6">
+
+3. Создал окружение для проведения дальнейших испытаний.
+  <img width="614" alt="task3" src="https://github.com/user-attachments/assets/a500d92e-7dbe-43cf-a0a0-c60789325bce">
+
+4. Запустил playbook на окружении из `prod.yml`. Зафиксировал полученные значения `some_fact` для каждого из `managed host`.
+Ставим докер-контейнеры centos7 и ubuntu и выполняем для них плейбук изменив значение переменнаых на deb default fact для ubuntu и el default fact для centos
+
+  <img width="938" alt="task4" src="https://github.com/user-attachments/assets/d7f16722-a9fd-4046-8272-494b7712d63a">
+
+
+5. Добавляем факты в `group_vars` каждой из групп хостов так, чтобы для `some_fact` получились значения: для `deb` — `deb default fact`, для `el` — `el default fact`.
+6. Повторно запускаем playbook на окружении `prod.yml`. Убедитесь, что выдаются корректные значения для всех хостов.
+  <img width="869" alt="task5-6" src="https://github.com/user-attachments/assets/73c96bf8-7b00-4196-8f0c-8234889d2a32">
+
+7. При помощи `ansible-vault` зашифруйте факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
 9. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь в работоспособности.
 10. Посмотрите при помощи `ansible-doc` список плагинов для подключения. Выберите подходящий для работы на `control node`.
 11. В `prod.yml` добавьте новую группу хостов с именем  `local`, в ней разместите localhost с необходимым типом подключения.
