@@ -22,12 +22,28 @@
   <img width="869" alt="task5-6" src="https://github.com/user-attachments/assets/73c96bf8-7b00-4196-8f0c-8234889d2a32">
 
 7. При помощи `ansible-vault` зашифруйте факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
-9. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь в работоспособности.
-10. Посмотрите при помощи `ansible-doc` список плагинов для подключения. Выберите подходящий для работы на `control node`.
-11. В `prod.yml` добавьте новую группу хостов с именем  `local`, в ней разместите localhost с необходимым типом подключения.
-12. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь, что факты `some_fact` для каждого из хостов определены из верных `group_vars`.
-13. Заполните `README.md` ответами на вопросы. Сделайте `git push` в ветку `master`. В ответе отправьте ссылку на ваш открытый репозиторий с изменённым `playbook` и заполненным `README.md`.
-14. Предоставьте скриншоты результатов запуска команд.
+   Шифруем наши файлы сообщений для каждого типа ОС с помоью Vault
+
+   <img width="585" alt="task7-1" src="https://github.com/user-attachments/assets/476bceec-5afb-4b82-a6bf-fea9b77b4766">
+
+   <img width="568" alt="task7-2" src="https://github.com/user-attachments/assets/43234739-8572-4d45-af04-5d8df0392322">
+
+8. Запускаем playbook на окружении `prod.yml`. При запуске `ansible` запрашивает пароль. Убедитесь в работоспособности.
+
+   <img width="752" alt="task8" src="https://github.com/user-attachments/assets/c0f00710-5544-4316-a430-3f74df6423f2">
+
+9. Смотрим при помощи `ansible-doc` список плагинов для подключения. Выбираем подходящий для работы на `control node`.
+
+   <img width="463" alt="task9" src="https://github.com/user-attachments/assets/d9dd3456-ee6e-4ed4-ae55-8eaacf6c8fdb">
+    
+10. В `prod.yml` добавляем новую группу хостов с именем  `local`, в ней размещаем localhost с необходимым типом подключения.
+
+    <img width="733" alt="task10" src="https://github.com/user-attachments/assets/1a1870f7-879f-431e-adf7-423c90c2e3b7">
+
+11. Запускаем playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь, что факты `some_fact` для каждого из хостов определены из верных `group_vars`.
+    
+12. Заполните `README.md` ответами на вопросы. Сделайте `git push` в ветку `master`. В ответе отправьте ссылку на ваш открытый репозиторий с изменённым `playbook` и заполненным `README.md`.
+13. Предоставьте скриншоты результатов запуска команд.
 
 ## Необязательная часть
 
