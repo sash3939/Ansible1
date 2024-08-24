@@ -1,0 +1,8 @@
+# Исключить файл TODO в корневом каталоге, но не файл в subdir/TODO
+/TODO
+
+# Игнорировать все файлы в каталоге build/
+build/
+
+# Игнорировать файл doc/notes.txt, но не файл doc/server/arch.txt
+*.txt
